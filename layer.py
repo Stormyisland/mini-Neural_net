@@ -12,5 +12,7 @@ class Layer:
         
         self.weights = np.random.rand((self.input_size, self.output_size, ))
         
-
+        
+        if bias:
+            self.weights = np.vstack( self.weights, np.random.rand((1, self.output_size)))
 
