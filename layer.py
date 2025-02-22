@@ -15,4 +15,19 @@ class Layer:
         
         if bias:
             self.weights = np.vstack( self.weights, np.random.rand((1, self.output_size)))
+            
+    def get_batch_size(self):
+        return self.batch_size
+    
+    def set_alpha(self, new_alpha):
+        self.alpha = new_alpha 
+            
+# Represents a model
+class LayerList: 
+    def __init__(self, *Layers):
+        self.model = list(Layers)
+        
+    def append(self, *Layers):
+        for layer in Layers:
+            self.model.append(layer)
 
