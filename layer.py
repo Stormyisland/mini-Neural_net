@@ -30,4 +30,9 @@ class LayerList:
     def append(self, *Layers):
         for layer in Layers:
             self.model.append(layer)
+            
+            
+    def set_alpha(self, new_alpha):
+        for layer in self.model:
+            layer.set_alpha(new_alpha)
 
