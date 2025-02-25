@@ -12,7 +12,8 @@ class ReLU:
     
     
 class Sigmoid:
-    pass
+    """_summary_
+    """
     
 class Softmax:
     pass
