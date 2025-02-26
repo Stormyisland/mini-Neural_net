@@ -21,4 +21,5 @@ class Sigmoid:
     
     
 class Softmax:
-    pass
+    """_summary_ pre_activatied_output
+    """
