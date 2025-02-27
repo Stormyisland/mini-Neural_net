@@ -21,5 +21,6 @@ class Sigmoid:
     
     
 class Softmax:
-    """_summary_ pre_activatied_output
+    """_summary_ pre_activated_output = [1,2,-3]
+       ReLU -> [1,2,0]
     """
