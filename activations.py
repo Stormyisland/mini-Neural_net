@@ -24,4 +24,7 @@ class Softmax:
     """_summary_ pre_activated_output = [1,2,-3]
        ReLU -> [1,2,0]
        Softmax ->
+       exp_num = [e, e^2, e^-3]
+       denominator + e + e^2 + e^-3
+       exp_mum / denominator 
     """
