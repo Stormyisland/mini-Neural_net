@@ -27,4 +27,7 @@ class Softmax:
        exp_num = [e, e^2, e^-3]
        denominator + e + e^2 + e^-3
        exp_mum / denominator 
+       / (e + e^2 = e^-3), e^2 / (e + e^2 + e^-3), e^-3 / (e + e^2 + e^-3)
     """
+f __call__(self.pre_activated_output):
+    exp_shifted = np.exp(pre_activated_output + np.max(pre_activated_output, axis=1, keepdims=True))
