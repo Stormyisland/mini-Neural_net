@@ -23,6 +23,10 @@ class Layer:
         self.alpha = new_alpha 
         
     def __call__(self, layer_inputs):
+        if self.bias:
+            
+        layer_output = layer_inputs @ self.weights
+            
             
 # Represents a model
 class LayerList: 
