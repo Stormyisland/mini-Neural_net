@@ -21,6 +21,8 @@ class Layer:
     
     def set_alpha(self, new_alpha):
         self.alpha = new_alpha 
+        
+    def __call__(self, layer_inputs):
             
 # Represents a model
 class LayerList: 
