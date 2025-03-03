@@ -45,3 +45,5 @@ class LayerList:
             
 
     def __call__(self, layer_inputs):
+        
+        if self.bias:
