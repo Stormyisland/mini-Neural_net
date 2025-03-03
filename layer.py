@@ -41,4 +41,7 @@ class LayerList:
     def set_alpha(self, new_alpha):
         for layer in self.model:
             layer.set_alpha(new_alpha)
+            
+            
 
+    def __call__(self, layer_inputs):
