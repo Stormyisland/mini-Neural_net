@@ -52,3 +52,8 @@ class LayerList:
             Layer_inputs = np.hstack(Layer_inputs, np.ones((self.batch_size, 1)))
             
         layer_outputs = Layer_inputs @ self.weights
+        
+        if self.activation_func is not None:
+            layer_output = self.activation_func(layer_output)
+            
+        return layer_output
