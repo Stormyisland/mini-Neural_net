@@ -57,3 +57,6 @@ class LayerList:
             layer_output = self.activation_func(layer_output)
             
         return layer_output
+    
+    class LayerList:
+        def__init__(self, *Layers):
