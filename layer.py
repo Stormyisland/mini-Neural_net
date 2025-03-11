@@ -59,4 +59,4 @@ class LayerList:
         return layer_output
     
     class LayerList:
-        def__init__(self, *Layers):
+        def__init__(self, *Layers)
