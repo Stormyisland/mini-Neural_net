@@ -61,3 +61,6 @@ class LayerList:
     class LayerList:
         def__init__(self, *Layers):
             def __init__(self, *Layers)
+            
+            
+    def get_batch_size(self):
