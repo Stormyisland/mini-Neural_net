@@ -64,3 +64,9 @@ class LayerList:
             
             
     def get_batch_size(self):
+        return  self.batch_file
+    
+    def set_alpha(self, new_alpha):
+        self.alpha = new_alpha 
+        
+    
