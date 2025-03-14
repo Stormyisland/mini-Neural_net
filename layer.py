@@ -70,4 +70,7 @@ class LayerList:
         self.alpha = new_alpha 
         
     def __call__(self, layer_inputs):
-        """_summary_"""
+        """_summary_
+        
+        Args:
+            layer_"""
