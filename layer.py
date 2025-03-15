@@ -70,7 +70,6 @@ class LayerList:
         self.alpha = new_alpha 
         
     def __call__(self, layer_inputs):
-        """_summary_
-        
-        Args:
-            layer_"""
+     
+        if self.bias:
+            Layer_inputs = np.hstack(Layer_input, np.ones((self.batch_size)))  
