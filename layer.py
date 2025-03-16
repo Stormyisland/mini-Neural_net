@@ -45,7 +45,7 @@ class LayerList:
             
 
     def __call__(self, layer_inputs):
-        """layer_inputs -> (batch_size, input_size + 1)
+        """layer_input -> (batch_size, input_size + 1)
     self.weight -> (input_size + 1, output_size)"""
         
         if self.bias:
