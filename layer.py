@@ -45,7 +45,7 @@ class LayerList:
             
 
     def __call__(self, layer_inputs):
-        """layer_input -> (batch_size, input_size + 1)
+        """layer_inputs -> (batch_size, input_size + 1)
     self.weight -> (input_size + 1, output_size)"""
         
         if self.bias:
@@ -73,3 +73,5 @@ class LayerList:
      
         if self.bias:
             Layer_inputs = np.hstack(Layer_input, np.ones((self.batch_size)))  
+            
+        layer_outputs = layer_inputs @self.weights    
