@@ -79,4 +79,4 @@ class LayerList:
         if self.activation_func is not None:
             layer_output =self .activation_func(layer_output)
             
-        return layer_output    
+        return layer_output :   
