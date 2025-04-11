@@ -77,7 +77,7 @@ class LayerList:
         layer_outputs = layer_inputs @self.weights    
         
         if self.activation_func is not None:
-            layer_output =self .activation_func(layer_output)
+            layer_output =self.activation_func(layer_output)
             
         return layer_output 
     
