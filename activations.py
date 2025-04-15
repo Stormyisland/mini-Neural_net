@@ -21,18 +21,7 @@ class Sigmoid:
     
     
 class Softmax:
-    """_summary_ pre_activated_output = [1,2,-3]
-       ReLU -> [1,2,0]
-       Softmax ->
-       exp_num = [e, e^2, e^-3]
-       denominator + e + e^2 + e^-3
-       exp_mum / denominator 
-       / (e + e^2 = e^-3), e^2 / (e + e^2 + e^-3), e^-3 / (e + e^2 + e^-3)
-       
-       max_val = 2 
-       [-1, 0, -5]
-       exp_shifted = [e^-1, e^0, e^-5]    
-    """
+  
 def __call__(self, pre_activated_output):
     exp_shifted = np.exp(pre_activated_output - np.max(pre_activated_output, axis=1, keepdims=True))
     denominator = np.sum(exp_shifted)
