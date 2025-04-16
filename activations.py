@@ -12,8 +12,7 @@ class ReLU:
     
     
 class Sigmoid:
-    """
-    f(x) = 1 / (1 + e^(-x))
+  / (1 + e^(-x))
     """
     
     def __call__(self, pre_activated_output):
