@@ -13,7 +13,7 @@ class ReLU:
     
 class Sigmoid:
   / (1 + e^(-x))
-    """
+  
     
    
 class Softmax:
