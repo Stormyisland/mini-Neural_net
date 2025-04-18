@@ -15,10 +15,7 @@ class Sigmoid:
   / (1 + e^(-x))
     """
     
-    def __call__(self, pre_activated_output):
-        return 1 / (1 + np.exp(- pre_activated_output))
-    
-    """
+   
 class Softmax:
   
 def __call__(self, pre_activated_output):
