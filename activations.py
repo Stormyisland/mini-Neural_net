@@ -32,5 +32,6 @@ def __call__(self, pre_activated_output):
   
   def __call__(self, pre_activated_input):
     exp_shifted = np.exp(pre_activated_input - np.max(pre_activated_input,axis=1, keepdims=true))
+    denomonator = np.sum(exp_shifted)
     
     
